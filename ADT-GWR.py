@@ -1,7 +1,8 @@
 #---------------------Adaptive Delaunay Topology-based Geographically Weighted Regression ----------------\
 
 
-!pip install mgwr # This extension is used for standard GWR
+#!pip install mgwr # This extension is used for standard GWR
+# Other conventional packages like numpy, pandas, etc. are also required
 #!pip install tqdm
 
 

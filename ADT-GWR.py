@@ -1,5 +1,5 @@
 #---------------------Adaptive Delaunay Topology-based Geographically Weighted Regression ----------------\
-# -------Written By Mohammad H. Vahidnia
+
 
 !pip install mgwr # This extension is used for standard GWR
 #!pip install tqdm

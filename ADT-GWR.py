@@ -32,12 +32,12 @@ if (np.min(coords[:, 0]) >= -180 and np.max(coords[:, 0]) <= 180) and \
     lon_center = np.mean(coords[:, 0])
     utm_zone = int((lon_center + 180) / 6) + 1
     proj_string = f"+proj=utm +zone={utm_zone} +datum=WGS84 +units=m +no_defs"
-    # transformer = pyproj.Transformer.from_crs("EPSG:4326", proj_string, always_xy=True) # Uncomment this line for UTM projection
-    # coords = np.array([transformer.transform(lon, lat) for lon, lat in coords]) # Uncomment this line for UTM projection
+    transformer = pyproj.Transformer.from_crs("EPSG:4326", proj_string, always_xy=True) # Uncomment this line for UTM projection
+    coords = np.array([transformer.transform(lon, lat) for lon, lat in coords]) # Uncomment this line for UTM projection
 
     # A special projection: USA Contiguous Albers Equal Area
-    transformer = pyproj.Transformer.from_crs("EPSG:4326", "EPSG:5070", always_xy=True) # Comment this line for UTM projection
-    coords = np.array([transformer.transform(lon, lat) for lon, lat in coords]) # Comment this line for UTM projection
+    # transformer = pyproj.Transformer.from_crs("EPSG:4326", "EPSG:5070", always_xy=True) # Comment this line for UTM projection
+    # coords = np.array([transformer.transform(lon, lat) for lon, lat in coords]) # Comment this line for UTM projection
 
 response = data.iloc[:, 2].values
 features = data.iloc[:, 3:].values

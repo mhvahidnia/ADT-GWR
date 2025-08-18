@@ -35,7 +35,7 @@
 
   	neighbors_range = range(15, 51, 5)
 
-  	o	This example sets a range from 15 to 50 with steps of 5.
+  o	This example sets a range from 15 to 50 with steps of 5.
 
 5.	Save ADT-GWR Coefficients
 

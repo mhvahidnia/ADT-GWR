@@ -7,6 +7,7 @@
 1.	Install Required Packages
 
   At the beginning of the script, install any required packages listed.
+  
     o	If using Google Colab, you only need to install the mgwr package for the standard GWR model before running the full code:
 
       !pip install mgwr
@@ -18,8 +19,11 @@
    data = pd.read_csv('/content/drive/MyDrive/GWR/Depression.csv')
 
    Your .csv file must follow this structure:
+   
       o	The first two columns must contain geographic coordinates (X, Y)
+      
       o	The third column is the dependent variable (e.g., Depression)
+      
       o	All remaining columns should be independent variables
 
         Example:

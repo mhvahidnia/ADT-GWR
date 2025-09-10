@@ -2,6 +2,10 @@
 
 Vahidnia M.H. (2025). ADT-GWR: adaptive Delaunay topology-based geographically weighted regression. _Spatial Information Research_, 33(5): 41. https://doi.org/10.1007/s41324-025-00638-9
 
+Date is sourced from:
+
+Lessani, M. N., & Li, Z. (2024). SGWR: similarity and geographically weighted regression. International Journal of Geographical Information Science, 38(7), 1232-1255.
+
 
 **Instructions for Using the ADT-GWR Python Program
 **
